@@ -1,0 +1,34 @@
+/*
+Name : Ansari Mohammad Muzammil Nisar Ahmad
+UIN : 241A035     Roll nO : 29
+Q.3 : Write a C program to calculate salary of an employee with name.
+*/
+#include <stdio.h>
+int main() {
+    int age, count = 0;
+    int baby_count = 0, school_count = 0, adult_count = 0;
+    // Using a while loop to read ages of 15 people
+    while (count < 15) {
+        printf("Enter age of person %d: ", count + 1);
+        scanf("%d", &age);
+        // Classify the age into categories
+        if (age >= 0 && age <= 5) {
+            baby_count++;
+        } else if (age >= 6 && age <= 17) {
+            school_count++;
+        } else if (age >= 18) {
+            adult_count++;
+        } else {
+            printf("Invalid age entered. Please enter a non-negative number.\n");
+            continue; // Skip incrementing count for invalid input
+        }
+    count++; // Increment count for valid input
+    }
+    // Display the results
+    printf("\nSummary:\n");
+    printf("Total Baby Age Count (0-5 years): %d\n", baby_count);
+    printf("Total School Age Count (6-17 years): %d\n", school_count);
+    printf("Total Adult Age Count (18+ years): %d\n", adult_count);
+
+    return 0;
+}
