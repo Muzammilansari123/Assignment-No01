@@ -1,0 +1,26 @@
+/*
+Name : Ansari Mohammad Muzammil Nisar Ahmad
+UIN : 241A035     Roll nO : 29
+Q.1 : Write a C program to convert specified days into years, weeks and days.
+      Write an algorithm & draw a flowchart for the same.
+*/
+#include <stdio.h>
+int main() {
+    int total_days, years, weeks, days;
+
+    // Input the total number of days
+    printf("Enter the number of days: ");
+    scanf("%d", &total_days);
+
+    // Conversion calculations
+    years = total_days / 365;
+    weeks = (total_days % 365) / 7;
+    days = (total_days % 365) % 7;
+
+    // Display the result
+    printf("Years: %d\n", years);
+    printf("Weeks: %d\n", weeks);
+    printf("Days: %d\n", days);
+
+    return 0;
+}
