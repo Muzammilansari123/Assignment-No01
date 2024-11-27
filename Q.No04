@@ -1,0 +1,13 @@
+/*
+Name : Ansari Mohammad Muzammil Nisar Ahmad
+UIN : 241A035     Roll nO : 29
+Q.4 : Write a C program to print the following Pyramid:
+*/
+#include<stdio.h>
+
+int main()
+{
+printf("\t\t*\n\t\t**\n\t\t***\n\t\t****\n\t\t****\n\t\t*****\n\t\t******\n");
+
+return 0;
+}
